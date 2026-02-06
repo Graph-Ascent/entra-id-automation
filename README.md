@@ -6,7 +6,7 @@
 
 A specialized collection of **Microsoft Graph SDK** scripts designed to automate user lifecycle management, security auditing, and tenant governance. These tools are built for scale, prioritizing **Least Privilege** and **Zero Trust** principles.
 
-## 🚀 Key Solutions
+## Key Solutions
 
 | Script | Function | Business Value |
 | :--- | :--- | :--- |
@@ -17,7 +17,7 @@ A specialized collection of **Microsoft Graph SDK** scripts designed to automate
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 * **PowerShell 7+** (Recommended) or PowerShell 5.1.
