@@ -24,3 +24,30 @@ A specialized collection of **Microsoft Graph SDK** scripts designed to automate
 * **Microsoft Graph SDK** modules. Install via:
   ```powershell
   Install-Module Microsoft.Graph.Users, Microsoft.Graph.Authentication -Scope CurrentUser
+
+graph TD
+    %% Define Nodes
+    HR[Authoritative Source<br/>'HR / CSV / SQL'] -- "New Hire Signal" --> Script[<b>Your PowerShell Engine</b><br/>'Microsoft Graph SDK']
+    
+    %% Lifecycle Actions
+    subgraph "Identity Lifecycle Management"
+    Script -- "Day 1" --> Provision[Provision Entra ID Account]
+    Provision --> License[Assign M365 Licenses]
+    License --> Security[Apply Zero-Trust CA Policies]
+    end
+    
+    %% Continuous Governance
+    subgraph "Ongoing Governance"
+    Audit[Audit: Inactive Users] -- "Alert" --> Script
+    MFA[Audit: MFA Gaps] -- "Report" --> Admin[Admin Dashboard]
+    end
+    
+    %% Offboarding
+    Term[Termination Signal] -- "Instant Trigger" --> Offboard[Automated Offboarding]
+    Offboard --> Revoke[Revoke Tokens & Disable]
+    Revoke --> Archive[Archive Data / Reclaim License]
+
+    %% Styling
+    style Script fill:#0078d4,color:#fff,stroke:#005a9e
+    style HR fill:#f3f2f1,stroke:#323130
+    style Offboard fill:#d83b01,color:#fff
