@@ -24,3 +24,8 @@ A specialized collection of **Microsoft Graph SDK** scripts designed to automate
 * **Microsoft Graph SDK** modules. Install via:
   ```powershell
   Install-Module Microsoft.Graph.Users, Microsoft.Graph.Authentication -Scope CurrentUser
+
+    %% Styling
+    style Script fill:#0078d4,color:#fff,stroke:#005a9e
+    style HR fill:#f3f2f1,stroke:#323130
+    style Offboard fill:#d83b01,color:#fff
